@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LANDrive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- الشريط الجانبي -->
+  <aside class="sidebar">
+    <div class="logo">📁 LANDrive</div>
+    <div class="info" id="serverInfo"></div>
+
+    <div class="section-title">المتصلون (<span id="userCount">0</span>)</div>
+    <ul class="users" id="usersList"></ul>
+  </aside>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="main">
+    <header class="topbar">
+      <div class="breadcrumb" id="breadcrumb">/</div>
+      <div class="actions">
+        <button id="btnMkdir" class="btn">➕ مجلد جديد</button>
+        <button id="btnUpload" class="btn primary">⬆ رفع ملفات</button>
+        <input type="file" id="fileInput" multiple hidden>
+      </div>
+    </header>
+
+    <div id="dropZone" class="dropzone">
+      <div class="dropHint">اسحب وأفلت الملفات هنا للرفع</div>
+      <ul class="files" id="filesList"></ul>
+    </div>
+  </main>
+
+  <!-- الشات -->
+  <aside class="chat">
+    <div class="chat-header">💬 الدردشة</div>
+    <ul class="chat-messages" id="chatMessages"></ul>
+    <form class="chat-form" id="chatForm">
+      <input type="text" id="chatInput" placeholder="اكتب رسالة..." autocomplete="off">
+      <button type="submit">إرسال</button>
+    </form>
+  </aside>
+</div>
+
+<!-- نافذة الاسم -->
+<div class="modal" id="nameModal">
+  <div class="modal-box">
+    <h2>مرحباً بك في LANDrive 👋</h2>
+    <p>اختر اسماً ليظهر للآخرين على الشبكة:</p>
+    <input type="text" id="nameInput" placeholder="اسمك..." maxlength="20">
+    <button id="nameBtn" class="btn primary">دخول</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
