@@ -62,9 +62,9 @@ from another device on the same network.
 
 You can download the ready-to-run ZIP version here:
 
-**[⬇️ Download LANDrive ZIP](YOUR_GITHUB_RELEASE_ZIP_LINK)**
+[download]
 
-> Replace `YOUR_GITHUB_RELEASE_ZIP_LINK` with the actual GitHub Release ZIP link after uploading the project.
+> [downlod] zip file
 
 ## 🚀 Installation
 
