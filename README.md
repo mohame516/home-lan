@@ -9,7 +9,7 @@ It allows multiple devices connected to the same network to access a shared web-
 * 📁 Web-based File Explorer
 * ⬆️ Upload files
 * ⬇️ Download files
-* 📂 Create folders
+* 📂 Create foldersd
 * ✏️ Rename files and folders
 * 🗑️ Delete files and folders
 * 🖱️ Drag & Drop file uploading
